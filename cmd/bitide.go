@@ -50,7 +50,24 @@ var bitIdeCmd = &cobra.Command{
 			return err
 		}
 
-		log.Printf("\n// Proof Data (256-bytes)\n%s\nb.END_EXAMPLE_WITNESS();\n// Circuit Specific Verifier Data (480-bytes serialized as 6 80-byte chunks)\n%s\nb.constant(0).tag(\"mode\");\nb.OP_CHECKGROTH16VERIFY();\n// stack is not modified so as to preserve compatibility with older versions of dogecoin\nb.OP_2DROP();\nb.OP_2DROP();\nb.OP_2DROP();\nb.OP_2DROP();\nb.OP_2DROP();\nb.OP_2DROP();\nb.OP_DROP();\nb.OP_1();\n", proofStr, vkStr)
+		log.Printf(`
+  // Proof Data (256-bytes)
+  %s
+  b.END_EXAMPLE_WITNESS();
+  // Circuit Specific Verifier Data (480-bytes serialized as 6 80-byte chunks)
+  %s
+  b.constant(0).tag(\"mode\");
+  b.OP_CHECKGROTH16VERIFY();
+  // stack is not modified so as to preserve compatibility with older versions of dogecoin
+  b.OP_2DROP();
+  b.OP_2DROP();
+  b.OP_2DROP();
+  b.OP_2DROP();
+  b.OP_2DROP();
+  b.OP_2DROP();
+  b.OP_DROP();
+  b.OP_1();
+"`, proofStr, vkStr)
 
 		err = groth16.Verify(proof, vk, witness)
 		if err != nil {
