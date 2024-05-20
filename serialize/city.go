@@ -10,6 +10,8 @@ type CityGroth16ProofData struct {
 	PiBA0 string `json:"pi_b_a0"`
 	PiBA1 string `json:"pi_b_a1"`
 	PiC   string `json:"pi_c"`
+  PublicInput0 string `json:"public_input_0"`
+  PublicInput1 string `json:"public_input_1"`
 }
 
 func ToJsonCityProof(p *groth16_bls12381.Proof, witness []fr.Element) (*CityGroth16ProofData, error) {
@@ -37,5 +39,7 @@ func ToJsonCityProof(p *groth16_bls12381.Proof, witness []fr.Element) (*CityGrot
 		piBSerialized[:96],
 		piBSerialized[96:],
 		piCSerialized,
+    ReverseHexString(arkHex2Proof.Witness[0]),
+    ReverseHexString(arkHex2Proof.Witness[1]),
 	}, nil
 }
