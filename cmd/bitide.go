@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"doge-covenant/btcprint"
-	"doge-covenant/serialize"
+	"github.com/GopherJ/doge-covenant/btcprint"
+	"github.com/GopherJ/doge-covenant/serialize"
 	"fmt"
 	"log"
 

@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"doge-covenant/circuits"
-	"doge-covenant/serialize"
+	"github.com/GopherJ/doge-covenant/circuits"
+	"github.com/GopherJ/doge-covenant/serialize"
 	"fmt"
 
 	"github.com/spf13/cobra"

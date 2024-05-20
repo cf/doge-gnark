@@ -1,4 +1,4 @@
-module doge-covenant
+module github.com/GopherJ/doge-covenant
 
 go 1.21.4
 

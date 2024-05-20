@@ -1,7 +1,7 @@
 package btcprint
 
 import (
-	"doge-covenant/serialize"
+	"github.com/GopherJ/doge-covenant/serialize"
 	"fmt"
 	"strings"
 )

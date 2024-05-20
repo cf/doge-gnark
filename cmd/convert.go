@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"doge-covenant/serialize"
+	"github.com/GopherJ/doge-covenant/serialize"
 	"fmt"
 
 	"github.com/spf13/cobra"

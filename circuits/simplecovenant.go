@@ -3,7 +3,7 @@ package circuits
 import (
 	"bytes"
 	"crypto/sha256"
-	sha256gadget "doge-covenant/sha256"
+	sha256gadget "github.com/GopherJ/doge-covenant/sha256"
 	"encoding/hex"
 	"log"
 	"math/big"

@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"doge-covenant/serialize"
+	"github.com/GopherJ/doge-covenant/serialize"
 	"fmt"
 
 	groth16 "github.com/consensys/gnark/backend/groth16/bls12-381"
