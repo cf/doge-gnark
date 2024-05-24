@@ -6,7 +6,7 @@ There was no license (other than "ALL RIGHTS RESERVED") but wanted to give them 
 
 package sha256gadget
 
-import "github.com/consensys/gnark/frontend"
+import "github.com/zilong-dai/gnark/frontend"
 
 func PutUint64(api frontend.API, b []xuint8, v xuint64) {
 	_ = b[7] // early bounds check to guarantee safety of writes below

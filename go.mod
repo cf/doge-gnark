@@ -3,10 +3,10 @@ module github.com/GopherJ/doge-covenant
 go 1.21.4
 
 require (
-	github.com/consensys/gnark v0.10.0
 	github.com/consensys/gnark-crypto v0.12.2-0.20240215234832-d72fcb379d3e
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.18.2
+	github.com/zilong-dai/gnark v0.0.0-20240517091131-0ad4d7b387da
 )
 
 require (

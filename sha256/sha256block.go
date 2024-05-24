@@ -7,7 +7,7 @@ There was no license (other than "ALL RIGHTS RESERVED") but wanted to give them 
 package sha256gadget
 
 import (
-	"github.com/consensys/gnark/frontend"
+	"github.com/zilong-dai/gnark/frontend"
 )
 
 var _K = []xuint32{

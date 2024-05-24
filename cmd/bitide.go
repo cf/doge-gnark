@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	groth16 "github.com/consensys/gnark/backend/groth16/bls12-381"
+	groth16 "github.com/zilong-dai/gnark/backend/groth16/bls12-381"
 	"github.com/spf13/cobra"
 )
 

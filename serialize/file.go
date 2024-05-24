@@ -6,7 +6,7 @@ import (
 	"os"
 
 	fr "github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	groth16_bls12381 "github.com/consensys/gnark/backend/groth16/bls12-381"
+	groth16_bls12381 "github.com/zilong-dai/gnark/backend/groth16/bls12-381"
 )
 
 // START: ARK Base Format

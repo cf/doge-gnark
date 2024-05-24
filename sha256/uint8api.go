@@ -7,8 +7,8 @@ There was no license (other than "ALL RIGHTS RESERVED") but wanted to give them 
 package sha256gadget
 
 import (
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/bits"
+	"github.com/zilong-dai/gnark/frontend"
+	"github.com/zilong-dai/gnark/std/math/bits"
 )
 
 // uint8api performs binary operations on xuint8 variables. In the
